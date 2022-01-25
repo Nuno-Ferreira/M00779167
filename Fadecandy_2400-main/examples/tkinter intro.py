@@ -1,6 +1,11 @@
 import tkinter as tk
 
 window = tk.Tk()
+window.title('Hello World')
+
+for i in range(3):
+    window.columnconfigure(i, weight = 1, minsize=75)
+    window.rowconfigure(i, weight = 1, minsize=75)
 
 for row in range(3):
     for col in range(3):
