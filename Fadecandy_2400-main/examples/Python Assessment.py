@@ -30,6 +30,7 @@ client.put_pixels(leds)
 
 
 # RED COLOUR
+"""
 led = 0
 while led<30:
     for rows in range(6):   #adding rows
@@ -38,7 +39,48 @@ while led<30:
     client.put_pixels(leds)
     time.sleep(.1)
     led = led + 1
+"""
+led = 0
+while led<60:
+    for rows in range(3):   #adding rows
+        leds[led + rows*60] = (255,0,0)
+    for rows in range(3,6):
+        leds[59-led + rows*60] = (255,0,0)
+    client.put_pixels(leds)
+    time.sleep(.05)
+    led = led + 1
+    
+led = 0
+while led<60:
+    for rows in range(3):   #adding rows
+        leds[led + rows*60] = (0,0,0)
+    for rows in range(3,6):
+        leds[59-led + rows*60] = (0,0,0)
+    client.put_pixels(leds)
+    time.sleep(.05)
+    led = led + 1
 
+led = 0
+while led<30:
+    for rows in range(6):   #adding rows
+        leds[led + rows*60] = (255,0,0)
+        leds[59-led + rows*60] = (255,0,0)
+    client.put_pixels(leds)
+    time.sleep(.05)
+    led = led + 1
+
+led = 0
+while led<30:
+    for rows in range(6):   #adding rows
+        leds[led + rows*60] = (0,0,0)
+        leds[59-led + rows*60] = (0,0,0)
+    client.put_pixels(leds)
+    time.sleep(.05)
+    led = led + 1
+
+
+
+"""
 #GREEN COLOUR
 led = 0
 while led<30:
@@ -59,7 +101,7 @@ while led<30:
     time.sleep(.1)
     led = led + 1
         
-
+"""
         
    
 
