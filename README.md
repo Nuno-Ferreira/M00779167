@@ -6,16 +6,16 @@ To make sure the code works correctly make sure to:
 
 To go to file:
 
-Enter the folder "Fadecandy_2400-main" 
+-Enter the folder "Fadecandy_2400-main" 
 
-Enter the folder "examples"
+-Enter the folder "examples"
 
-Then open the file "Python Assessment"
+-Then open the file "Python Assessment"
 
-Run the program 
+-Run the program 
 
-From the 3 options choose one 
+-From the 3 options choose one 
 
-To stop the program click the button "exit"
+-To stop the program click the button "exit"
 
 Enjoy!
